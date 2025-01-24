@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/eCitizenHub/">eCitizenHub</a>
+            <a class="navbar-brand" href="index.html">eCitizenHub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/eCitizenHub/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -32,7 +32,6 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">NID</a></li>
                             <li><a class="dropdown-item" href="#">BIRTH CERTIFICATE</a></li>
-                            <li><a class="dropdown-item" href="#"></a></li>
                             <li><a class="dropdown-item" href="#">PASSPORT</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -41,10 +40,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/eCitizenHub/about.html">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/eCitizenHub/contact.html">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -65,28 +64,24 @@
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div>
-                <select class="form-select" aria-label="Default select example">
+                <label for="querySelect" class="form-label">Select your Query</label>
+                <select id="querySelect" class="form-select" aria-label="Default select example">
                     <option selected>Select your Query</option>
                     <option value="1">Certificates</option>
                     <option value="2">Passport</option>
                     <option value="3">Driving License</option>
-
                 </select>
             </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Elaborate your problem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
         </form>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Elaborate your problem</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button class="btn btn-primary">Submit</button>
-        </form>
-
-
-
     </div>
     <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>@ 2024-2025 eCitizenHub,Inc. ~ <a href="#">Privacy</a>~<a href="#">Terms</a></p>
+        <p>@ 2024-2025 eCitizenHub, Inc. ~ <a href="#">Privacy</a> ~ <a href="#">Terms</a></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
